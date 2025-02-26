@@ -13,7 +13,8 @@ test('Busca "Roland Corporation" en Wikipedia y verifica modelos 909 y 808', asy
   if (searchInput) {
     await searchInput.type('Roland Corporation');
     await searchInput.press('Enter');
-  } else {
+  } else 
+  {
     throw new Error('No se encontró el campo de búsqueda');
   }
 
