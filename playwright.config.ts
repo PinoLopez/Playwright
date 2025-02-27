@@ -6,9 +6,5 @@ module.exports =
   {
     headless: false, // Habilita el modo "headed"
   },
-  testMatch: 
-  [
-    '01wikipedia.spec.ts',
-    '02wikipedia.spec.ts',
-  ],
+  testMatch: '/*.spec.ts',
 };

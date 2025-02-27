@@ -41,14 +41,15 @@ test('Busca "Roland Corporation" en Wikipedia y verifica modelos 909 y 808', asy
 
   // 6. Resalta los modelos 909 y 808
   await highlightElements(page.locator('text=909'));
-  await page.waitForTimeout(3000);
+  await page.waitForTimeout(2000);
 
   await highlightElements(page.locator('text=808'));
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(2000);
 
   // Verifica que aparezcan los modelos 909, 808
   const bodyText = await page.textContent('body');
   expect(bodyText).toContain('909');
+  await page.waitForTimeout(2000);
   expect(bodyText).toContain('808');
 
   await page.waitForTimeout(2000);

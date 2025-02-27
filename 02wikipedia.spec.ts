@@ -41,7 +41,7 @@ test('Busca "Ibanez Musician Bass" en Wikipedia y verifica modelos MC-888 y MC-9
 
   // 6. Resalta los modelos MC-888 y MC-924
   await highlightElements(page.locator('text=MC-888'));
-  await page.waitForTimeout(1000);
+  await page.waitForTimeout(2000);
 
   await highlightElements(page.locator('text=MC-924'));
   await page.waitForTimeout(2000);
@@ -49,6 +49,7 @@ test('Busca "Ibanez Musician Bass" en Wikipedia y verifica modelos MC-888 y MC-9
   // Verifica que aparezcan los modelos MC-888 y MC-924
   const bodyText = await page.textContent('body');
   expect(bodyText).toContain('MC-888');
+  await page.waitForTimeout(2000);
   expect(bodyText).toContain('MC-924');
 
   await page.waitForTimeout(2000);

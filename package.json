@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:ordered": "node run-tests-ordered.js",
+    "test": "npx playwright test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan Pino López",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "@playwright/test": "^1.50.1"
+    "@playwright/test": "^1.50.1",
+    "glob": "^11.0.1"
   }
 }
