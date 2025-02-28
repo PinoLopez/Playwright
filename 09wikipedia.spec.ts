@@ -27,7 +27,7 @@ test('Verifica la página de Mercedes-Benz Sprinter en Wikipedia', async ({ page
         }
     };
 
-    // 5. Resalta elementos clave (opcional)
+    // 5. Resalta elementos clave 
     await highlightElement(page.locator('div#mw-content-text p:has-text("Light commercial vehicle")'));
     await page.waitForTimeout(2000);
 

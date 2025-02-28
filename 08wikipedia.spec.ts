@@ -26,7 +26,7 @@ test('Verifica la página de Enrique Morente en Wikipedia', async ({ page }) => 
         }
     };
 
-    // 5. Resalta elementos clave (opcional)
+    // 5. Resalta elementos clave 
     await highlightElement(page.locator('text=Flamenco singer'));
     await page.waitForTimeout(2000);
 
